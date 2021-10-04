@@ -10,6 +10,13 @@ namespace part_6___loops
     {
         static void Main(string[] args)
         {
+            //prompter
+            int min;
+            int max;
+            int input;
+
+
+
         }
     }
 }
