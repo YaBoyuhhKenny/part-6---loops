@@ -10,30 +10,55 @@ namespace part_6___loops
     {
         static void Main(string[] args)
         {
-            //prompter
-            int min;
-            int max;
-            int input;
+            ////prompter
+            //int min;
+            //int max;
+            //int input;
 
-            Console.WriteLine("enter a minimum number");
-            min = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter a minimum number");
+            //min = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("enter a maximum number");
-            max = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter a maximum number");
+            //max = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("now enter a number between the two");
-            input = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("now enter a number between the two");
+            //input = Convert.ToInt32(Console.ReadLine());
 
-            while ((input <= min) || (input >= max))
+            //while ((input <= min) || (input >= max))
+            //{
+            //    Console.WriteLine("enter a number between the two");
+            //    input = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //if ((input > min) && (input < max))
+            //{
+            //    Console.WriteLine("you entered " + input + " which is in between " + min + " and " + max);
+            //}
+
+            //PercentPassing
+            
+            bool done = false;
+            int totalPass = 0, percent;
+            Console.WriteLine("enter the grade percentages and follow instructions to end the program");
+            while(done != true)
             {
-                Console.WriteLine("enter a number between the two");
-                input = Convert.ToInt32(Console.ReadLine());
+                percent = Convert.ToInt32(Console.ReadLine());
+                if (percent > 50)
+                {
+                    totalPass = totalPass + 1; 
+                }
+
+                Console.WriteLine("do you want to continue? Y or N");
+                string answer = Console.ReadLine().ToUpper();
+                if(answer == "N")
+                {
+                    done = true;
+                }
             }
 
-            if((input > min) && (input < max))
-            {
-                Console.WriteLine("you entered " + input + " which is in between " + min + " and " + max);
-            }
+            Console.WriteLine($"the number of passing grades are {totalPass}");
+
+
 
             Console.ReadLine();
         }
