@@ -42,14 +42,19 @@ namespace part_6___loops
 
             bool done = false;
             int totalPass = 0, percent;
+            double average;
+            percent = 0;
+            int totalTests = 0;
             Console.WriteLine("enter the grade percentages and follow instructions to end the program");
             while (done != true)
             {
                 percent = Convert.ToInt32(Console.ReadLine());
-                if (percent > 70)
+                if (percent >= 70)
                 {
                     totalPass = totalPass + 1;
                 }
+
+
 
                 Console.WriteLine("do you want to continue? Y or N");
                 string answer = Console.ReadLine().ToUpper();
@@ -57,9 +62,13 @@ namespace part_6___loops
                 {
                     done = true;
                 }
+
+                totalTests = totalTests + 1;
             }
 
-            Console.WriteLine($"the number of passing grades are {totalPass}");
+            average = (((double)totalPass / totalTests) * 100);
+
+            Console.WriteLine($"the percent of passes is {average}%");
 
             Console.WriteLine();
 
