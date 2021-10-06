@@ -43,7 +43,7 @@ namespace part_6___loops
             //while (done != true)
             //{
             //    percent = Convert.ToInt32(Console.ReadLine());
-            //    if (percent > 50)
+            //    if (percent > 70)
             //    {
             //        totalPass = totalPass + 1;
             //    }
@@ -58,18 +58,20 @@ namespace part_6___loops
 
             //Console.WriteLine($"the number of passing grades are {totalPass}");
 
-            //oddSum
+            ////oddSum
 
-            int userInput;
+            //int userInput;
 
-            Console.WriteLine("enter a number to get the odd numbers in it");
-            userInput = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter a number to get the odd numbers in it");
+            //userInput = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i < userInput; i = i + 2)
-            {
-                Console.WriteLine(Convert.ToString(i));
-            }
+            //for (int i = 1; i < userInput; i = i + 2)
+            //{
+            //    Console.WriteLine(Convert.ToString(i));
+            //}
 
+
+            //randomNumbers
 
 
 
